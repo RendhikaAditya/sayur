@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    android:orientation="vertical"
+    tools:context=".activity.AlamatAdd">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/backAlamat"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/backbtn"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/backKeranjang"
+            android:gravity="center"
+            android:text="Daftar Alamat"
+            android:textColor="#2A2C2E"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/lineshadow" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/alamat"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kemana Pesanan Kamu Akan di kirim ?"
+            android:layout_marginBottom="20dp"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:inputType="text"
+            android:background="@drawable/edtextlogin"
+            android:hint="Nama Penerima"
+            android:id="@+id/namaPenerima"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:inputType="phone"
+            android:background="@drawable/edtextlogin"
+            android:hint="Kode Pos Penerima"
+            android:id="@+id/kodePos"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edtextlogin"
+            android:hint="Alamat Penerima"
+            android:id="@+id/alamatEdit"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/submitbtn"
+            android:text="SIMPAN"
+            android:textColor="@color/light"
+            android:id="@+id/btnSimpanAlamat"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

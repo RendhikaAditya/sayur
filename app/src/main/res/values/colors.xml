@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5DBC9D</color>
+    <color name="colorPrimaryDark">#5DBC9D</color>
+    <color name="colorAccent">#5DBC9D</color>
+
+    <color name="light">#FFFFFF</color>
+    <color name="shimmer_foreground">#DADADA</color>
+    <color name="shimmer_background">#EBEBEB</color>
+
+    <color name="error">#FF4141</color>
+
+
+    <color name="bghabis">#A95DBC9D</color>
+    <color name="txthabis">#DAD6D6</color>
+
+    <color name="satu">#5DBC9D</color>
+    <color name="dua">#778ca3</color>
+    <color name="tiga">#26de81</color>
+</resources>

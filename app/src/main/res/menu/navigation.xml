@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/order"
+        android:title="My Order"
+        android:icon="@drawable/order"/>
+
+<!--    <item-->
+<!--        android:id="@+id/inbox"-->
+<!--        android:title="Inbox"-->
+<!--        android:icon="@drawable/mail"/>-->
+    <item
+        android:id="@+id/chat"
+        android:title="Chat"
+        android:icon="@drawable/chat"/>
+
+    <item
+        android:id="@+id/profil"
+        android:title="Profil"
+        android:icon="@drawable/user"/>
+</menu>

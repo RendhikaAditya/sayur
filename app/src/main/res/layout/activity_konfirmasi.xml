@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sw_konfirmasi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Konfirmasi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_checkout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <include layout="@layout/shimmer_checkout" />
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <include
+                layout="@layout/layout_koneksi"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/layout_kosong"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/topbar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="Info Pembayaran"
+                    android:textColor="#2A2C2E"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/lineshadow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Total pemayaran :"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/totalHarga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Rp 100.000,00"
+                    android:textColor="@color/satu"
+                    android:textSize="28dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/satu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Transfer Sesuai Nominal Diatas" />
+
+            <TextView
+                android:id="@+id/dua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light"
+                android:padding="12dp"
+                android:text="Pembayaran akan di cek dalam 1 jam, jika tidak ada pembayaran jika tidak maka barang akan di cencel. Dan Barang akan di proses setelah bukti transfer di upload" />
+
+            <LinearLayout
+                android:id="@+id/onlyTransfer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Transfer Ke rekening berikut" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/bni" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No Rekening       :  " />
+
+                        <TextView
+                            android:id="@+id/noRekening"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0820300394882" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Rekening  :  " />
+
+                        <TextView
+                            android:id="@+id/namaRekening"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Saya Sendiri" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Foto bukti pembayaran dan upload di sini" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/btnPick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Pick Foto"
+                        android:textColor="@color/satu" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnSelesai"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@color/satu"
+            android:text="Selesai"
+            android:textColor="@color/light" />
+    </LinearLayout>
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

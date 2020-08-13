@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Cari">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/edtextlogin"
+            android:inputType="text"
+
+            android:maxLines="1"
+            android:id="@+id/cariProd"
+            android:hint="Cari Produk"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="50dp">
+            <requestFocus/>
+        </EditText>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btnCari"
+            android:src="@drawable/searccch"
+            android:layout_toRightOf="@+id/card_produk"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

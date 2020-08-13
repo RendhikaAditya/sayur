@@ -1,0 +1,2 @@
+rootProject.name='sayur'
+include ':app'
